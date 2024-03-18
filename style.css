@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+.navbar{
+   
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.navbar>img{
+    height:11rem;
+
+}
+
+.root{
+    height: 4rem;
+    background-color: #bea150;
+    box-shadow: 0 3px 7px grey;
+    position: relative;
+
+}
+
+.root>p{
+    
+    line-height: 1.6;
+    letter-spacing: 0.0075;
+    margin: 0 8px 0 8px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.814);
+    font-size: 1.2rem;
+    position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     right:1.5rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    width: 75%;
+    margin-bottom: 5rem;
+}
+
+.login-head{
+    margin: 24px 0px 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.65rem;
+    line-height: 1.334;
+    letter-spacing: 0em;
+    padding: 16px;
+    background-color: rgb(227, 227, 207);
+    font-weight: 700;
+    border-radius: 12px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.781);
+}
+
+.svg{
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+}
+
+.input{
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    padding: 0px;
+    position: relative;
+    margin: 1rem 0 1rem 0;
+    
+}
+
+.instructions, .error{
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+    text-align: left;
+    margin: 3px 14px 0px;
+}
+
+input{
+    width: 100%;
+    height: 3rem;
+    font-size: 1.2rem;
+    padding: 1.6rem 0.75rem;
+    border-radius: 2px;
+    border: solid 1.5px grey; 
+}
+
+input:focus{
+    outline: none;
+    border:2px solid #bea150;
+}
+
+#captcha-image{
+    margin:1rem 0 0 0;
+}
+
+#reload-butto{
+    margin:1rem 0 0 0;
+}
+
+button{
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 1.5rem 1.5rem 1.5rem 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 8px 22px;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: rgb(0, 66, 80);
+    background-color: rgb(190, 161, 80);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    margin-top: 1.5rem;
+}
+
+button:hover{
+    background-color: yellow;
+    box-shadow: 2px 1px 4px grey;
+    z-index: 5;
+}
+
+.forgot{
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px 0px 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.9875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 8px 11px;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: rgb(190, 161, 80);
+    margin-top: 1.5rem;
+}
+
+#footer{
+    height: 3.5rem;
+    width: 100%;
+    background-color: #bea150;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#footer>p{
+    margin: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    text-align: center;
+    color: #004250;
+}
+
+#footer>p>a{
+    color: #004250;
+}
+
+.error{
+    color:red;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    display: none;
+}
